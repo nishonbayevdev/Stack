@@ -1,0 +1,25 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.wrapper {
+	width: 100%;
+	height: 100vh;
+}
+.text-align-center {
+	text-align: center;
+}
+.display-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card-color{
+	display: inline-block;
+	font-size: 2rem;
+	padding: 10px 70px;
+	margin: 10px 0;
+	border-radius: 7px;
+	box-shadow: 0 8px 15px #f1f1f1;
+}
