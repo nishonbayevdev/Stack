@@ -1,0 +1,43 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: #f1f1f1;
+}
+.text-align-center {
+	text-align: center;
+}
+.wrapper {
+	width: 100%;
+	height: 100vh;
+	background: #f1f1f1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.spril {
+	width: 80px;
+	height: 80px;
+	border: 5px solid #32325D;
+	border-top-color: #f1f1f1;
+	border-radius:50%;
+	animation: rotatespril  1s infinite linear;
+}
+.toggle {
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+}
+.set-time {
+	transition: .2s;
+}
+@keyframes rotatespril {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

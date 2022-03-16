@@ -8,12 +8,23 @@ class SearchApp extends React.Component {
 
 	onClickSubmit = (e) => {
 		e.preventDefault()
-		this.props.onSendQuery(this.state.dataKey)
-			fetch(`http://127.0.0.1:8000/api/?query=${this.state.dataKey}&token=adasdlasmdlksa5a1d5s1d51d21cs21csd0c2`)
+		try {
+			this.props.onSendQuery(this.state.dataKey)
+			try {
+				fetch(`http://127.0.0.1:8000/api/images/?query=${this.state.dataKey}&token=adasdlasmdlksa5a1d5s1d51d21cs21csd0c2`)
 			.then(res => res.json())
 				.then((json) => {
+					
 					this.setState({data:json})
 				})
+			}
+			catch (e) {
+				this.setState({data:[]})	
+			}
+		}
+		catch (e) {
+			this.setState({data:[]})
+		}
 	}
 	render () {
 		return (
