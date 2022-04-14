@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	overflow-x: hidden;
+}
+.wrapper {
+	width: 100%;
+	height: auto;
+	background: #f1f1f1;
+}
+.navbar-brand img {
+	height: 20px;
+}
+.bg-wrapper,.img-right{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.img-right{
+	height:70vh;
+}
+@media (max-width : 998px) {
+	.modal-ul {
+		display:none;
+	}
+}
